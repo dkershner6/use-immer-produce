@@ -2,6 +2,12 @@
 
 React Hook nearly identical to use-immer, but it returns the draft from the update function.
 
+## Installation
+
+```
+npm i use-immer-produce immer
+```
+
 ## Usage
 
 ```typescript
