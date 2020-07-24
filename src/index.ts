@@ -1,1 +1,3 @@
-export { default as twoPlusTwo } from './lib';
+import useImmerProduce from './lib';
+
+export default useImmerProduce;
