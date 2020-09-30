@@ -1,6 +1,6 @@
 {
   "name": "use-immer-produce",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React Hook nearly identical to use-immer, but it returns the draft from the update function.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
