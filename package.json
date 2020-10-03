@@ -1,6 +1,6 @@
 {
   "name": "use-immer-produce",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React Hook nearly identical to use-immer, but it returns the draft from the update function.",
   "main": "dist/index.js",
   "source": "src/index.ts",
@@ -8,7 +8,7 @@
   "unpkg": "dist/index.umd.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rimraf dist && microbundle --external react --globals react=React --strict --no-compress",
+    "build": "rimraf dist && microbundle --strict --no-compress",
     "format-check": "prettier --check .",
     "format": "prettier --write .",
     "test": "jest --coverage --passWithNoTests",
@@ -63,6 +63,7 @@
   ],
   "dependencies": {},
   "peerDependencies": {
+    "react": ">=16.9.0",
     "immer": ">=6.0.0"
   }
 }
