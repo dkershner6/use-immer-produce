@@ -8,10 +8,10 @@ import { useState, useRef } from 'react';
  * @param initialValue Any initial value
  */
 const useImmerProduce = <T>(
-    initialValue: T
+    initialValue: T | (() => T)
 ): [T, (updater: (draft: Draft<T>) => void) => T, T] => {
     const [value, setValue] = useState(initialValue);
-    const nextValue = useRef(initialValue);
+    const nextValue = useRef(value);
 
     const updateValue = (updater: (draft: Draft<T>) => void): T => {
         nextValue.current = produce(nextValue.current, updater);
