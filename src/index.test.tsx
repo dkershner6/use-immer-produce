@@ -2,7 +2,7 @@
 import { render, fireEvent, screen } from "@testing-library/react";
 import React, { ReactElement } from "react";
 import "@testing-library/jest-dom";
-import useImmerProduce from ".";
+import { useImmerProduce } from ".";
 
 const TestComponent = ({
     testFn,
