@@ -7,7 +7,7 @@ import { useState, useRef } from "react";
  * Tests should be covered by a combination of use cases within this lib, and immer itself.
  * @param initialValue Any initial value
  */
-const useImmerProduce = <T>(
+export const useImmerProduce = <T>(
     initialValue: T | (() => T),
 ): [T, (updater: (draft: Draft<T>) => void) => T, T] => {
     const [value, setValue] = useState(initialValue);
@@ -21,5 +21,3 @@ const useImmerProduce = <T>(
 
     return [value, updateValue, nextValue.current];
 };
-
-export default useImmerProduce;
