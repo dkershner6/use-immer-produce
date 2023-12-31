@@ -1,5 +1,5 @@
-import useImmerProduce from './lib';
-
-export { useImmerProduce };
-
-export default useImmerProduce;
+export class Hello {
+  public sayHello() {
+    return 'hello, world!';
+  }
+}
