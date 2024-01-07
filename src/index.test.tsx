@@ -1,6 +1,8 @@
 /* eslint-disable sonarjs/no-duplicate-string */
-import { render, fireEvent, screen } from "@testing-library/react";
 import React, { ReactElement } from "react";
+
+import { render, fireEvent, screen } from "@testing-library/react";
+
 import "@testing-library/jest-dom";
 import { useImmerProduce } from ".";
 
