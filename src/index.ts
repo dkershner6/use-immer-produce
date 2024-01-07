@@ -1,5 +1,6 @@
-import { produce, Draft } from "immer";
 import { useState, useRef } from "react";
+
+import { produce, Draft } from "immer";
 
 /**
  * The main advantage of this hook over useImmer, is that the updateValue function returns the nextValue (like produce).
